@@ -62,17 +62,3 @@
     justify-content: center;
   }
 }
-/* Responsive Media Queries for contact page */
-@media (max-width: 850px) {
-    .contact-wrapper {
-        grid-template-columns: 1fr;
-    }
-    
-    .contact-info {
-        padding: 30px;
-    }
-    
-    .contact-form-section {
-        padding: 30px;
-    }
-}
