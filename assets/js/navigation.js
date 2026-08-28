@@ -19,3 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+/* --- Keyboard Navigation Support --- */
+document.addEventListener('keydown', (e) => {
+    const navLinks = document.getElementById('navLinks');
+    const hamburger = document.getElementById('hamburger');
+
+    if (e.key === 'Escape' && navLinks && navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
+        if (hamburger) hamburger.classList.remove('active');
+    }
+});
