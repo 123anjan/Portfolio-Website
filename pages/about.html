@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me - Portfolio</title>
+    <!-- Adjust path for CSS since this file is inside the pages/ folder -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+    <link rel="stylesheet" href="../assets/css/animation.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="../index.html">Portfolio<span>.</span></a>
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div
+          class="nav-actions"
+          style="display: flex; align-items: center; gap: 1rem"
+        >
+          <button
+            class="theme-toggle-btn"
+            id="themeToggle"
+            aria-label="Toggle Theme"
+          >
+            🌆
+          </button>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="section-container">
+      <!-- Bio Intro -->
+      <h2 class="section-title">About Me</h2>
+      <p class="section-subtitle">
+        Passionate creator bridging the gap between elegant design and robust
+        backend engineering.
+      </p>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <h3>Hello, I'm a Professional Web Developer</h3>
+          <p>
+            I specialize in building high-performing, accessible, and fully
+            responsive web applications. With a strong foundation in both
+            frontend interfaces and Python-driven backend logic, I turn complex
+            business requirements into seamless digital experiences.
+          </p>
+          <p>
+            Whether it's crafting lightning-fast landing pages, designing custom
+            Flask APIs, or structuring relational databases, I focus on writing
+            clean, scalable, and maintainable code.
+          </p>
+        </div>
+        <div class="card about-card">
+          <h4>Quick Professional Facts</h4>
+          <ul class="facts-list">
+            <li><strong>Location:</strong> Available Worldwide (Remote)</li>
+            <li><strong>Experience:</strong> Full-Stack Web Development</li>
+            <li><strong>Core Stack:</strong> HTML5, CSS3, JS, Python, Flask</li>
+            <li><strong>Focus:</strong> UI/UX Design & Clean Architecture</li>
+            <li><strong>Availability:</strong> Open for Freelance Projects</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Additional Info Cards Grid -->
+      <div class="grid-3 about-extra-cards" style="margin-bottom: 4rem">
+        <div class="card">
+          <h4 class="value-title">Technical Expertise</h4>
+          <p class="value-desc">
+            Proficient in building full-stack applications with HTML5, CSS3,
+            JavaScript, Python, Flask, and relational databases like Oracle SQL.
+          </p>
+        </div>
+        <div class="card">
+          <h4 class="value-title">Problem Solving</h4>
+          <p class="value-desc">
+            Focused on debugging efficiently, optimizing database queries, and
+            structuring clean architectural logic for web apps and interactive
+            games.
+          </p>
+        </div>
+        <div class="card">
+          <h4 class="value-title">Continuous Learning</h4>
+          <p class="value-desc">
+            Constantly exploring modern UI/UX design workflows via Figma,
+            advanced JavaScript frameworks, and sharpening responsive design
+            principles.
+          </p>
+        </div>
+      </div>
+      <!-- Professional Values -->
+      <h3 class="values-heading">How I Work</h3>
+      <div class="grid-3 values-grid">
+        <div class="card">
+          <h4 class="value-title">1. User-Centric Design</h4>
+          <p class="value-desc">
+            Every pixel and layout choice is built with the end-user in mind,
+            ensuring intuitive navigation and aesthetic appeal across all
+            devices.
+          </p>
+        </div>
+        <div class="card">
+          <h4 class="value-title">2. Clean Code Standards</h4>
+          <p class="value-desc">
+            I adhere strictly to semantic HTML, modular CSS styling, and
+            efficient JavaScript practices for optimal speed and
+            maintainability.
+          </p>
+        </div>
+        <div class="card">
+          <h4 class="value-title">3. Reliable Delivery</h4>
+          <p class="value-desc">
+            Clear communication, structured project milestones, and rigorous
+            testing guarantee your project launches on time and functions
+            flawlessly.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h3>DevPortfolio<span>.</span></h3>
+          <p>
+            Building robust, high-performance web applications and responsive
+            user interfaces for modern businesses and clients worldwide.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <!-- Use ../ to go back to root from inside pages/ -->
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <div class="social-buttons">
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener"
+              class="social-btn"
+              >GitHub</a
+            >
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener"
+              class="social-btn"
+              >LinkedIn</a
+            >
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener"
+              class="social-btn"
+              >Twitter</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 Freelance Web Developer. All rights reserved. Built with
+          HTML5, CSS3, and JavaScript.
+        </p>
+      </div>
+    </footer>
+    <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/navigation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+/* Responsive Design Breakpoints */
+@media (max-width: 768px) {
+  .navbar {
+    background-color: var(--nav-bg);
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    flex-direction: column;
+    background-color: var(--nav-bg);
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+    gap: 1.5rem;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hero-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 3rem 5%;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .img-placeholder {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 1rem;
+  }
+}
+/* --- Footer Responsive Styles --- */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .footer-links ul {
+    align-items: center;
+  }
+
+  .social-buttons {
+    justify-content: center;
+  }
+}
+/* Responsive Media Queries for contact page */
+@media (max-width: 850px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-info {
+        padding: 30px;
+    }
+    
+    .contact-form-section {
+        padding: 30px;
+    }
+}

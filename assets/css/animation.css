@@ -1,0 +1,235 @@
+/* Hero Section Dynamic Animations */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes floatImage {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes textGlow {
+  0%,
+  100% {
+    text-shadow: 0 0 5px rgba(0, 123, 255, 0);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(0, 123, 255, 0.4);
+  }
+}
+
+/* Apply animations to Hero elements */
+.hero-content {
+  animation: slideInLeft 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.hero-content h1 {
+  animation: textGlow 4s ease-in-out infinite;
+}
+
+.hero-image {
+  animation:
+    slideInRight 1s cubic-bezier(0.25, 1, 0.5, 1) forwards,
+    floatImage 4s ease-in-out infinite 1s;
+}
+
+/* Button pulse effect on hover */
+.primary-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.primary-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.15);
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  transition: transform 0.5s ease-out;
+}
+
+.primary-btn:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Enhanced Cool Animations & Interactions */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatCard {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.skills-section {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Staggered entrance delay for skill cards */
+.skills-grid .skill-card:nth-child(1) {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+.skills-grid .skill-card:nth-child(2) {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+.skills-grid .skill-card:nth-child(3) {
+  animation: fadeInUp 1s ease-out forwards;
+}
+.skills-grid .skill-card:nth-child(4) {
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+.skill-card {
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    box-shadow 0.4s ease,
+    border-color 0.4s ease;
+}
+
+/* Glowing accent line at the top of each card on hover */
+.skill-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #007bff, #00d2ff);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.skill-card:hover::before {
+  transform: scaleX(1);
+}
+
+.skill-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 30px rgba(0, 123, 255, 0.15);
+  border-color: #007bff;
+}
+/* --- Animation & Ambient Effects --- */
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 450px;
+  height: 450px;
+  background: linear-gradient(
+    135deg,
+    rgba(37, 99, 235, 0.15),
+    rgba(14, 165, 233, 0.15)
+  );
+  filter: blur(80px);
+  border-radius: 50%;
+  z-index: -1;
+  pointer-events: none;
+  animation: pulseGlow 6s ease-in-out infinite alternate;
+}
+
+@keyframes pulseGlow {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+}
+/* --- Footer Entrance Animation --- */
+.site-footer {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* --- About Page Animations --- */
+.about-grid {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.values-grid .card {
+  opacity: 0;
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.values-grid .card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.values-grid .card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.values-grid .card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
