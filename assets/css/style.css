@@ -246,7 +246,6 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
-   display: inline-flex;
 }
 
 .skill-card {

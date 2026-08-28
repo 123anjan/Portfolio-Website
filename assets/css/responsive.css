@@ -1,7 +1,8 @@
 /* Responsive Design Breakpoints */
 @media (max-width: 768px) {
   .navbar {
-    background-color: var(--nav-bg);
+    background-color:aqua;
+    
   }
 
   .nav-links {
@@ -9,7 +10,7 @@
     top: 100%;
     left: -100%;
     flex-direction: column;
-    background-color: var(--nav-bg);
+    background-color: aquamarine;
     width: 100%;
     text-align: center;
     padding: 1.5rem 0;
