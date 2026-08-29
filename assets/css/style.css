@@ -227,13 +227,7 @@ header {
   object-fit: cover;
 }
 /* Skills Section Styling */
-.services-body{
-  background-image: url("https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=2070");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  
-}
+
 .skills-section {
     background-image: url("https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=2070");
   background-size: cover;
@@ -370,6 +364,13 @@ header {
 .value-desc {
   color: var(--text-muted);
   font-size: 0.95rem;
+}/*--- services page styles---*/
+.services-body{
+  background-image: url("https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=2070");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  
 }
 /*--- contact page styles---*/
 
