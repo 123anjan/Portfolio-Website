@@ -22,7 +22,9 @@
   --secondary-text: #a0aec0;
   --border-color: #2d3748;
 }
-
+[data-theme="dark"] .hamburger img {
+    filter: brightness(0) invert(1);
+}
 body {
   font-family: Arial, sans-serif;
   background-color: var(--bg-color);
@@ -103,6 +105,9 @@ header {
   cursor: pointer;
   flex-direction: column;
   gap: 5px;
+}
+.icon-menu{
+  padding: 0.1rem;
 }
 
 /* Dark Mode Toggle Button Styling */

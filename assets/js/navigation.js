@@ -1,18 +1,15 @@
 "use strict";
 const hamburger = document.getElementById("hamburger");
-  const navLinks = document.getElementById("navLinks");
-/* --- Universal Theme Toggle Injector for Dedicated Containers --- */
-document.addEventListener("DOMContentLoaded", () => {
-  // 1. Apply saved theme immediately on page load
+const navLinks = document.getElementById("navLinks");
+const navbar = document.querySelector(".navbar");
+const navItems = navLinks.querySelectorAll("a");
 
+/* --- Universal Dark Theme Toggle --- */
+document.addEventListener("DOMContentLoaded", () => {
   const currentTheme = localStorage.getItem("theme") || "light";
   document.documentElement.setAttribute("data-theme", currentTheme);
-
-  // 2. Find the empty container on the current page
   const toggleContainer = document.querySelector(".theme-container");
-
   if (toggleContainer) {
-    // Populate the container with the toggle switch HTML
     toggleContainer.innerHTML = `
             <div class="theme-switch-wrapper">
                 <label class="theme-switch" for="dark-mode-checkbox">
@@ -39,6 +36,17 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   /* --- The hamburger-menu --- */
+  if (navbar && !document.getElementById("hamburger")) {
+    navbar.insertAdjacentHTML(
+      "beforeend",
+      `
+            <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+              <img src="assets/icons/menu.png" alt="Menu" class="icon-menu" id="menu-icon"/>
+              <img src="assets/icons/close.png" alt="Close" class="icon-close" id="close-icon"/>
+            </button>
+        `,
+    );
+  }
 
   if (hamburger && navLinks) {
     hamburger.addEventListener("click", () => {
@@ -47,7 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Close menu when a link is clicked
-    const navItems = navLinks.querySelectorAll("a");
 
     navItems.forEach((link) => {
       link.addEventListener("click", () => {
