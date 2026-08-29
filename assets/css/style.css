@@ -230,7 +230,7 @@ header {
 .skills-section {
    
   padding: 5rem 5%;
-  background-color: var(--bg-color);
+  background-image: url(https://unsplash.com/s/photos/dark-background);
   max-width: 1200px; 
   margin: 0 auto;
 }
