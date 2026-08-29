@@ -1,4 +1,4 @@
-"strict mode";
+"use strict";
 
 const themeToggle = document.getElementById("themeToggle");
 const currentTheme = localStorage.getItem("theme");
@@ -9,27 +9,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Dark Mode Toggle
   /* --- Theme Toggle Functionality --- */
-const toggleSwitch = document.querySelector('.theme-switch-wrapper input[type="checkbox"]');
-const currentTheme = localStorage.getItem('theme');
+  const toggleSwitch = document.querySelector(
+    '.theme-switch-wrapper input[type="checkbox"]',
+  );
 
-if (currentTheme) {
-    document.documentElement.setAttribute('data-theme', currentTheme);
-    if (currentTheme === 'dark') {
-        toggleSwitch.checked = true;
+  if (currentTheme) {
+    document.documentElement.setAttribute("data-theme", currentTheme);
+    if (currentTheme === "dark") {
+      toggleSwitch.checked = true;
     }
-}
+  }
 
-function switchTheme(e) {
+  function switchTheme(e) {
     if (e.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
+      document.documentElement.setAttribute("data-theme", "dark");
+      localStorage.setItem("theme", "dark");
     } else {
-        document.documentElement.setAttribute('data-theme', 'light');
-        localStorage.setItem('theme', 'light');
+      document.documentElement.setAttribute("data-theme", "light");
+      localStorage.setItem("theme", "light");
     }
-}
+  }
 
-if (toggleSwitch) {
-    toggleSwitch.addEventListener('change', switchTheme, false);
-}
+  if (toggleSwitch) {
+    toggleSwitch.addEventListener("change", switchTheme, false);
+  }
 });
