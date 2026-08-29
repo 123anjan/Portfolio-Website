@@ -104,12 +104,7 @@ header {
   flex-direction: column;
   gap: 5px;
 }
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background-color: #333;
-  transition: 0.3s;
-}
+
 /* Dark Mode Toggle Button Styling */
 /* --- Toggle Switch Styles --- */
 .theme-switch-wrapper {
