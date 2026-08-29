@@ -18,44 +18,41 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
-});
-/* --- Universal Theme Toggle Injector & Functionality --- */
-document.addEventListener('DOMContentLoaded', () => {
+
+  /* --- Universal Theme Toggle Injector for Dedicated Containers --- */
     // 1. Apply saved theme immediately on page load
     const currentTheme = localStorage.getItem('theme') || 'light';
     document.documentElement.setAttribute('data-theme', currentTheme);
 
-    // 2. Inject toggle switch into navbar if it doesn't already exist on the page
-    let switchWrapper = document.querySelector('.theme-switch-wrapper');
-    if (!switchWrapper) {
-        const navLinks = document.querySelector('.nav-links') || document.querySelector('.navbar');
-        if (navLinks) {
-            switchWrapper = document.createElement('div');
-            switchWrapper.className = 'theme-switch-wrapper';
-            switchWrapper.innerHTML = `
+    // 2. Find the empty container on the current page
+    const toggleContainer = document.querySelector('.theme-container');
+    
+    if (toggleContainer) {
+        // Populate the container with the toggle switch HTML
+        toggleContainer.innerHTML = `
+            <div class="theme-switch-wrapper">
                 <label class="theme-switch" for="dark-mode-checkbox">
                     <input type="checkbox" id="dark-mode-checkbox" ${currentTheme === 'dark' ? 'checked' : ''} />
                     <div class="slider"></div>
                 </label>
                 <span class="theme-label">Dark Mode</span>
-            `;
-            navLinks.appendChild(switchWrapper);
+            </div>
+        `;
+
+        // 3. Handle change events and state persistence
+        const toggleSwitch = toggleContainer.querySelector('#dark-mode-checkbox');
+        if (toggleSwitch) {
+            toggleSwitch.addEventListener('change', (e) => {
+                if (e.target.checked) {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    document.documentElement.setAttribute('data-theme', 'light');
+                    localStorage.setItem('theme', 'light');
+                }
+            });
         }
     }
-
-    // 3. Handle change events and state persistence
-    const toggleSwitch = document.querySelector('#dark-mode-checkbox');
-    if (toggleSwitch) {
-        toggleSwitch.checked = (currentTheme === 'dark');
-        
-        toggleSwitch.addEventListener('change', (e) => {
-            if (e.target.checked) {
-                document.documentElement.setAttribute('data-theme', 'dark');
-                localStorage.setItem('theme', 'dark');
-            } else {
-                document.documentElement.setAttribute('data-theme', 'light');
-                localStorage.setItem('theme', 'light');
-            }
-        });
-    }
 });
+
+
