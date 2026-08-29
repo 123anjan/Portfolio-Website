@@ -229,7 +229,7 @@ header {
 /* Skills Section Styling */
 
 .skills-section {
-  background-image: url("services bg.png");
+  /* background-image: url("services bg.png"); */
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -370,6 +370,22 @@ header {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+.button {
+  font: size 15px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+  align-self: flex-start;
+  color: #fff;
+  background: #2c677c;
+  padding: 8px 12px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+.button:hover {
+  background-color: #007bff;
+  transition: 0.4s ease;
 }
 /*--- contact page styles---*/
 
