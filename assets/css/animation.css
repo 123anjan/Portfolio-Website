@@ -172,6 +172,95 @@
     opacity: 1;
   }
 }
+
+/* Hamburger icon animation */
+
+.hamburger img {
+    position: absolute;
+
+    width: 28px;
+    height: 28px;
+
+    object-fit: contain;
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.4s ease;
+}
+
+.icon-menu {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+.icon-close {
+    opacity: 0;
+    transform: rotate(-90deg) scale(0.5);
+}
+
+
+/* Hamburger → X */
+
+.hamburger.active .icon-menu {
+    opacity: 0;
+    transform: rotate(90deg) scale(0.5);
+}
+
+.hamburger.active .icon-close {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+}
+
+
+/* Mobile navigation animation */
+
+.nav-links {
+    transition:
+        max-height 0.5s ease,
+        opacity 0.35s ease;
+}
+
+
+/* Navigation link animation */
+
+.nav-links li {
+    transform: translateY(-15px);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.4s ease;
+}
+
+.nav-links.active li {
+    transform: translateY(0);
+}
+
+
+/* Staggered links */
+
+.nav-links.active li:nth-child(1) {
+    transition-delay: 0.08s;
+}
+
+.nav-links.active li:nth-child(2) {
+    transition-delay: 0.14s;
+}
+
+.nav-links.active li:nth-child(3) {
+    transition-delay: 0.20s;
+}
+
+.nav-links.active li:nth-child(4) {
+    transition-delay: 0.26s;
+}
+
+.nav-links.active li:nth-child(5) {
+    transition-delay: 0.32s;
+}
+
+
+
+
 /* --- Footer Entrance Animation --- */
 .site-footer {
   animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
