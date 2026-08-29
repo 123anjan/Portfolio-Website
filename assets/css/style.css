@@ -112,7 +112,7 @@ header {
 }
 /* Dark Mode Toggle Button Styling */
 .theme-toggle-btn {
-  background: none;
+  background-image: url(https://unsplash.com/s/photos/dark-background);
   border: none;
   cursor: pointer;
   font-size: 1.2rem;
