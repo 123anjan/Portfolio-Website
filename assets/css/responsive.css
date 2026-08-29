@@ -21,11 +21,6 @@
   .nav-links.active {
     left: 0;
   }
-
-  .hamburger {
-    display: flex;
-  }
-
   .hero-section {
     flex-direction: column-reverse;
     text-align: center;
@@ -45,6 +40,8 @@
     height: 220px;
     margin-bottom: 1rem;
   }
+/* --- hamburger menu --- */
+
 }
 /* --- Footer Responsive Styles --- */
 @media (max-width: 768px) {
