@@ -27,95 +27,113 @@
       </nav>
     </header>
 
-    <main class="section-container">
-      <!-- Bio Intro -->
-      <h2 class="section-title">About Me</h2>
-      <p class="section-subtitle">
-        Passionate creator bridging the gap between elegant design and robust
-        backend engineering.
-      </p>
+    <!-- About Page Layout -->
+<main class="about-page-container">
+    <!-- Top Hero Section -->
+    <section class="about-hero-section">
+        <div class="about-hero-header">
+            <h1>ABOUT ME</h1>
+            <a href="contact.html" class="btn-hire">Hire Me</a>
+        </div>
+        <div class="about-hero-content">
+            <div class="about-hero-text">
+                <p class="greeting">Hello, I am</p>
+                <h2 class="name">Anjan Basak</h2>
+                <p class="bio">
+                    A full-stack web developer with a passion for building clean, responsive applications and digital experiences. Focused on bridging intuitive UI/UX design with robust back-end architecture using Python, Flask, Django, and modern JavaScript.
+                </p>
+                <p class="bio-secondary">
+                    Combining an analytical foundation from a Bachelor of Arts with technical versatility, eager to craft high-performance products and collaborate with dynamic teams.
+                </p>
+                
+                <!-- Social Links & Resume -->
+                <div class="social-links">
+                    <a href="#" class="social-icon" aria-label="Facebook">F</a>
+                    <a href="#" class="social-icon" aria-label="Twitter">T</a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">in</a>
+                    <a href="#" class="social-icon" aria-label="GitHub">GH</a>
+                    <a href="#" class="social-icon" aria-label="Instagram">IG</a>
+                </div>
+                
+                <a href="#" class="download-resume">
+                    <span class="download-icon">⬇</span> Download Resume
+                </a>
+            </div>
+            <div class="about-hero-image">
+                <img src="../assets/images/profile org.png" alt="Profile Photo">
+            </div>
+        </div>
+    </section>
 
-      <div class="about-grid">
-        <div class="about-text">
-          <h3>Hello, I'm a Professional Web Developer</h3>
-          <p>
-            I specialize in building high-performing, accessible, and fully
-            responsive web applications. With a strong foundation in both
-            frontend interfaces and Python-driven backend logic, I turn complex
-            business requirements into seamless digital experiences.
-          </p>
-          <p>
-            Whether it's crafting lightning-fast landing pages, designing custom
-            Flask APIs, or structuring relational databases, I focus on writing
-            clean, scalable, and maintainable code.
-          </p>
+    <!-- Two-Column Bottom Section -->
+    <div class="about-grid-section">
+        <!-- Left Column: Recent Activity -->
+        <div class="column-left">
+            <h3>My Recent Activity</h3>
+            
+            <div class="activity-item">
+                <div class="activity-icon">💻</div>
+                <div class="activity-details">
+                    <h4>Building Student Management System</h4>
+                    <span class="activity-date">August, 2026</span>
+                    <p>Integrated HTML5, CSS3, JavaScript, Python Flask, and Oracle SQL to build a functional academic management system.</p>
+                </div>
+            </div>
+
+            <div class="activity-item">
+                <div class="activity-icon">🎨</div>
+                <div class="activity-details">
+                    <h4>UI/UX & Prototyping in Figma</h4>
+                    <span class="activity-date">July, 2026</span>
+                    <p>Structuring web application layouts and user flows to optimize interface design before development.</p>
+                </div>
+            </div>
+
+            <div class="activity-item">
+                <div class="activity-icon">🏋️</div>
+                <div class="activity-details">
+                    <h4>Physical Fitness & Strength Training</h4>
+                    <span class="activity-date">Ongoing</span>
+                    <p>Maintaining a routine of barbell strength exercises and martial arts conditioning like horse stances.</p>
+                </div>
+            </div>
+
+            <div class="activity-item">
+                <div class="activity-icon">🎮</div>
+                <div class="activity-details">
+                    <h4>Developing Browser Games & Clones</h4>
+                    <span class="activity-date">Recent</span>
+                    <p>Creating platform clones like Amazon/Spotify and interactive JavaScript games like Snake and Sudoku.</p>
+                </div>
+            </div>
         </div>
-        <div class="card about-card">
-          <h4>Quick Professional Facts</h4>
-          <ul class="facts-list">
-            <li><strong>Location:</strong> Available Worldwide (Remote)</li>
-            <li><strong>Experience:</strong> Full-Stack Web Development</li>
-            <li><strong>Core Stack:</strong> HTML5, CSS3, JS, Python, Flask</li>
-            <li><strong>Focus:</strong> UI/UX Design & Clean Architecture</li>
-            <li><strong>Availability:</strong> Open for Freelance Projects</li>
-          </ul>
+
+        <!-- Right Column: Creative Pursuits (Replacing Blogs) -->
+        <div class="column-right">
+            <h3>Creative Pursuits & Hobbies</h3>
+
+            <div class="creative-item">
+                <h4>Pencil Sketching & Portrait Drawing</h4>
+                <p>Translating photograph references into detailed pencil sketches and managing publicity content for art initiatives. <a href="#" class="read-more">View Gallery &rarr;</a></p>
+            </div>
+
+            <div class="creative-item">
+                <h4>Poetry & Creative Prose</h4>
+                <p>Writing poems and reflective notes in a personal notebook during free time to capture thoughts and ideas. <a href="#" class="read-more">Learn More &rarr;</a></p>
+            </div>
+
+            <div class="creative-item">
+                <h4>Culinary Experiments & Cooking</h4>
+                <p>Enjoying the craft of preparing signature home-cooked meals, from rich egg curries to custom vegetable fried rice. <a href="#" class="read-more">Explore Recipes &rarr;</a></p>
+            </div>
+
+            <div class="creative-item">
+                <h4>Animation & Action Media Enthusiast</h4>
+                <p>Following intense storytelling and martial arts series like <em>Baki Hanma</em> for creative inspiration. <a href="#" class="read-more">View Favorites &rarr;</a></p>
+            </div>
         </div>
-      </div>
-      <!-- Additional Info Cards Grid -->
-      <div class="grid-3 about-extra-cards" style="margin-bottom: 4rem">
-        <div class="card">
-          <h4 class="value-title">Technical Expertise</h4>
-          <p class="value-desc">
-            Proficient in building full-stack applications with HTML5, CSS3,
-            JavaScript, Python, Flask, and relational databases like Oracle SQL.
-          </p>
-        </div>
-        <div class="card">
-          <h4 class="value-title">Problem Solving</h4>
-          <p class="value-desc">
-            Focused on debugging efficiently, optimizing database queries, and
-            structuring clean architectural logic for web apps and interactive
-            games.
-          </p>
-        </div>
-        <div class="card">
-          <h4 class="value-title">Continuous Learning</h4>
-          <p class="value-desc">
-            Constantly exploring modern UI/UX design workflows via Figma,
-            advanced JavaScript frameworks, and sharpening responsive design
-            principles.
-          </p>
-        </div>
-      </div>
-      <!-- Professional Values -->
-      <h3 class="values-heading">How I Work</h3>
-      <div class="grid-3 values-grid">
-        <div class="card">
-          <h4 class="value-title">1. User-Centric Design</h4>
-          <p class="value-desc">
-            Every pixel and layout choice is built with the end-user in mind,
-            ensuring intuitive navigation and aesthetic appeal across all
-            devices.
-          </p>
-        </div>
-        <div class="card">
-          <h4 class="value-title">2. Clean Code Standards</h4>
-          <p class="value-desc">
-            I adhere strictly to semantic HTML, modular CSS styling, and
-            efficient JavaScript practices for optimal speed and
-            maintainability.
-          </p>
-        </div>
-        <div class="card">
-          <h4 class="value-title">3. Reliable Delivery</h4>
-          <p class="value-desc">
-            Clear communication, structured project milestones, and rigorous
-            testing guarantee your project launches on time and functions
-            flawlessly.
-          </p>
-        </div>
-      </div>
-    </main>
+    </div>
+</main>
     <footer class="site-footer">
       <div class="footer-container">
         <div class="footer-brand">

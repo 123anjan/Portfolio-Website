@@ -71,6 +71,20 @@
     margin-bottom: 1rem;
   }
 }
+/* --- About Responsive Styles --- */
+@media (max-width: 850px) {
+    .about-hero-content, .about-grid-section {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    .about-hero-image {
+        text-align: center;
+    }
+    .about-hero-image img {
+        max-width: 100%;
+        height: 350px;
+    }
+}
 /* --- Footer Responsive Styles --- */
 @media (max-width: 768px) {
   .footer-container {
