@@ -667,7 +667,242 @@ color: var(--accent-color);
 }
 
 /*--- contact page styles---*/
+.contact-page-container {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
 
+.contact-container {
+    width: 100%;
+    max-width: 1000px;
+    background-color: var(--card-bg);
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.contact-form-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    z-index: 10;
+}
+
+/* Contact Info Side */
+.contact-info {
+    padding: 3.5rem 2rem;
+    background: var(--accent-gradient);
+    color: #ffffff;
+    position: relative;
+}
+
+.contact-info .title {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.contact-info .text {
+    color: rgba(255, 255, 255, 0.85);
+    margin: 1.5rem 0 2rem 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.information {
+    display: flex;
+    align-items: center;
+    margin: 1.2rem 0;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+}
+
+.info-icon {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.social-media {
+    margin-top: 2rem;
+}
+
+.social-media p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 0.6rem;
+}
+
+.contact-info .social-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-info .social-icon:hover {
+    background: #fff;
+    color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+/* Contact Form Box Side */
+.contact-form-box {
+    padding: 3.5rem 3rem;
+    position: relative;
+}
+
+.contact-form-box .title {
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+/* Floating Input Animation fields */
+.input-container {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input {
+    width: 100%;
+    outline: none;
+    border: 2px solid var(--border-color);
+    background: var(--bg-color);
+    padding: 1rem 1.2rem;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.input-container textarea.input {
+    padding: 1.2rem;
+    min-height: 130px;
+    resize: none;
+}
+
+.input-container label {
+    position: absolute;
+    top: 50%;
+    left: 1.2rem;
+    transform: translateY(-50%);
+    padding: 0 0.4rem;
+    color: var(--secondary-text);
+    font-size: 0.9rem;
+    pointer-events: none;
+    transition: 0.3s ease;
+    background: transparent;
+}
+
+.input-container.textarea label {
+    top: 1.2rem;
+    transform: translateY(0);
+}
+
+/* Floating behavior when active or focused */
+.input-container span {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    color: transparent;
+    padding: 0;
+    font-size: 0.6rem;
+    transition: 0.3s ease;
+    pointer-events: none;
+}
+
+.input:focus,
+.input:not(:placeholder-shown) {
+    border-color: var(--accent-color);
+    background: var(--card-bg);
+}
+
+.input:focus ~ label,
+.input:not(:placeholder-shown) ~ label {
+    top: 0;
+    transform: translateY(-50%);
+    font-size: 0.75rem;
+    color: var(--accent-color);
+    background: var(--card-bg);
+    font-weight: 600;
+}
+
+/* Submit Button */
+.btn-submit {
+    padding: 0.8rem 2rem;
+    background: var(--accent-gradient);
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
+    transition: 0.3s;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5);
+}
+
+/* Geometric Decorative Background Elements */
+.shapes-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.08;
+    background: var(--accent-color);
+}
+
+.shape.s1 {
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    right: -100px;
+}
+
+.shape.s2 {
+    width: 200px;
+    height: 200px;
+    bottom: -50px;
+    left: -50px;
+}
 /* --- Footer Styles --- */
 .site-footer {
   background-color: var(--card-bg);
