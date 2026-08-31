@@ -307,7 +307,63 @@
     }
 }
 
+/* --- contact page Input Field Keyframe Animations --- */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* Smooth staggered entrance for contact form fields */
+@keyframes fieldEntrance {
+    from {
+        opacity: 0;
+        transform: translateX(-15px) translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0) translateY(0);
+    }
+}
+
+/* Glowing outline pulse when input is focused */
+@keyframes focusRingGlow {
+    0% {
+        box-shadow: 0 0 0 0 rgba(124, 58, 237, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 6px rgba(124, 58, 237, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(124, 58, 237, 0);
+    }
+}
+
+/* Success pop animation */
+@keyframes successPop {
+    0% { transform: scale(0.95); opacity: 0; }
+    70% { transform: scale(1.02); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+
 /* --- Element Animation Bindings --- */
+
+/* About Page Bindings */
 .about-hero-content {
     animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
@@ -321,4 +377,24 @@
     animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
     opacity: 0;
     animation-fill-mode: forwards;
+}
+
+/* Contact Form Input Field Bindings */
+.input-container {
+    opacity: 0;
+    animation: fieldEntrance 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Stagger the appearance of each input field sequentially */
+.input-container:nth-child(1) { animation-delay: 0.05s; }
+.input-container:nth-child(2) { animation-delay: 0.1s; }
+.input-container:nth-child(3) { animation-delay: 0.15s; }
+.input-container.textarea { animation-delay: 0.2s; }
+
+.input:focus {
+    animation: focusRingGlow 1.2s infinite ease-in-out;
+}
+
+.success-message {
+    animation: successPop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }

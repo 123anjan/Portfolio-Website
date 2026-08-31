@@ -676,21 +676,21 @@ color: var(--accent-color);
 /*--- contact page styles---*/
 /* --- Contact Page Styles matching Video Design --- */
 .contact-page-container {
-    min-height: calc(100vh - 80px);
+    min-height: calc(100vh - 100px);
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 1.5rem;
     position: relative;
     overflow: hidden;
 }
 
 .contact-container {
     width: 100%;
-    max-width: 1000px;
+    max-width: 850px;
     background-color: var(--card-bg);
-    border-radius: 20px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     display: grid;
     grid-template-columns: 1fr;
     position: relative;
@@ -805,7 +805,7 @@ color: var(--accent-color);
     font-size: 0.95rem;
     letter-spacing: 0.5px;
     border-radius: 8px;
-    transition: 0.3s;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-container textarea.input {
@@ -819,17 +819,21 @@ color: var(--accent-color);
     top: 50%;
     left: 1.2rem;
     transform: translateY(-50%);
+    transform-origin: left top;
     padding: 0 0.4rem;
     color: var(--secondary-text);
     font-size: 0.9rem;
     pointer-events: none;
-    transition: 0.3s ease;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);;
     background: transparent;
 }
 
 .input-container.textarea label {
     top: 1.2rem;
     transform: translateY(0);
+}
+.input-container:hover .input {
+    border-color: rgba(124, 58, 237, 0.5);
 }
 
 /* Floating behavior when active or focused */
@@ -874,10 +878,13 @@ color: var(--accent-color);
     box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
     transition: 0.3s;
     width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-submit:hover {
-    transform: translateY(-2px);
+    transform: scale(0.98);
     box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5);
 }
 /* --- success message style --- */
@@ -906,7 +913,7 @@ color: var(--accent-color);
 .shape {
     position: absolute;
     border-radius: 50%;
-    opacity: 0.08;
+    opacity: 0.18;
     background: var(--accent-color);
 }
 
@@ -922,6 +929,49 @@ color: var(--accent-color);
     height: 200px;
     bottom: -50px;
     left: -50px;
+}
+
+
+/* --- Dark Mode Enhancements for Contact Page --- */
+[data-theme="dark"] .contact-container {
+    background-color: var(--card-bg);
+    border-color: var(--border-color);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="dark"] .contact-info {
+    background: linear-gradient(135deg, #5b21b6 0%, #312e81 100%);
+}
+
+[data-theme="dark"] .input {
+    background: #18181b;
+    border-color: #27272a;
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .input:focus,
+[data-theme="dark"] .input:not(:placeholder-shown) {
+    border-color: var(--accent-color);
+    background: #1e1e24;
+}
+
+[data-theme="dark"] .input-container label {
+    color: var(--secondary-text);
+}
+
+[data-theme="dark"] .input:focus ~ label,
+[data-theme="dark"] .input:not(:placeholder-shown) ~ label {
+    background: #1e1e24;
+    color: var(--accent-color);
+}
+
+[data-theme="dark"] .contact-form-box .title {
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .shape {
+    opacity: 0.5;
+    background: #9574f8;
 }
 /* --- Footer Styles --- */
 .site-footer {
