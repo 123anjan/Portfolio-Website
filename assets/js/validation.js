@@ -1,40 +1,70 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const inputs = document.querySelectorAll(".input");
-    const contactForm = document.getElementById("contactForm");
-    const successMessage = document.getElementById("successMessage");
+  const inputs = document.querySelectorAll(".input");
+  const contactForm = document.getElementById("contactForm");
+  const successMessage = document.getElementById("successMessage");
+  const phoneInput = document.getElementById("phoneInput");
+  const phoneError = document.getElementById("phoneError");
 
-    inputs.forEach((input) => {
-        input.addEventListener("focus", () => {
-            input.parentNode.classList.add("focus");
-        });
+  function focusFunc() {
+    let parent = this.parentNode;
+    parent.classList.add("focus");
+  }
 
-        input.addEventListener("blur", () => {
-            if (input.value === "") {
-                input.parentNode.classList.remove("focus");
-            }
-        });
+  function blurFunc() {
+    let parent = this.parentNode;
+    if (this.value == "") {
+      parent.classList.remove("focus");
+    }
+  }
+
+
+  inputs.forEach((input) => {
+    input.addEventListener("focus", () => {
+      input.parentNode.classList.add("focus");
     });
 
-    // Handle form submission and success message display
-    if (contactForm) {
-        contactForm.addEventListener("submit", (e) => {
-            e.preventDefault(); // Prevent page reload
+    input.addEventListener("blur", () => {
+      if (input.value === "") {
+        input.parentNode.classList.remove("focus");
+      }
+    });
+  });
 
-            // Show success message
-            successMessage.style.display = "block";
+  // Handle form submission with 10-digit phone verification
+  if (contactForm) {
+    contactForm.addEventListener("submit", (e) => {
+      e.preventDefault(); // Stop default form submit
 
-            // Reset the form fields
-            contactForm.reset();
+      // Clean input to check digit count only
+      const phoneVal = phoneInput.value.trim();
+      const phoneDigitsOnly = phoneVal.replace(/\D/g, ""); // strip non-numeric characters
 
-            // Reset input container focus states
-            inputs.forEach((input) => {
-                input.parentNode.classList.remove("focus");
-            });
+      // Validation rule: Must be exactly 10 digits
+      if (phoneDigitsOnly.length !== 10) {
+        phoneInput.classList.add("error");
+        phoneError.style.display = "block";
 
-            // Hide success message automatically after 5 seconds
-            setTimeout(() => {
-                successMessage.style.display = "none";
-            }, 5000);
-        });
-    }
+        // Optional soft shake effect invocation
+        phoneInput.focus();
+        return; // Prevent form from submitting successfully
+      } else {
+        phoneInput.classList.remove("error");
+        phoneError.style.display = "none";
+      }
+
+      // If validation passes, display success notification
+      successMessage.style.display = "block";
+      contactForm.reset();
+
+      // Clear input labels
+      inputs.forEach((input) => {
+        input.parentNode.classList.remove("focus");
+      });
+
+      // Hide success message automatically after 5 seconds
+      setTimeout(() => {
+        successMessage.style.display = "none";
+      }, 5000);
+    });
+  }
 });
