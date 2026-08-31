@@ -3,6 +3,9 @@
 const themeToggle = document.getElementById("themeToggle");
 const currentTheme = localStorage.getItem("theme");
 const savedTheme = localStorage.getItem("theme") || "light";
+const readMoreButtons = document.querySelectorAll(".read-more-btn");
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Website Loaded");
@@ -33,4 +36,22 @@ document.addEventListener("DOMContentLoaded", () => {
   if (toggleSwitch) {
     toggleSwitch.addEventListener("change", switchTheme, false);
   }
+});
+/* --- Services conditions --- */
+
+readMoreButtons.forEach((button) => {
+  button.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    const card = this.closest(".skill-card");
+    const moreText = card.querySelector(".more-text");
+
+    if (moreText.style.display === "none") {
+      moreText.style.display = "inline";
+      this.textContent = "Read Less";
+    } else {
+      moreText.style.display = "none";
+      this.textContent = "Read More";
+    }
+  });
 });

@@ -448,6 +448,10 @@ input:checked + .slider:before {
   background-color: #007bff;
   transition: 0.4s ease;
 }
+.more-text{
+  display: none;
+}
+
 
 /* --- About page styles --- */
 .about-page-container {
@@ -677,7 +681,6 @@ input:checked + .slider:before {
 }
 
 /*--- contact page styles---*/
-/* --- Contact Page Styles matching Video Design --- */
 .contact-page-container {
   min-height: auto;
   display: flex;
