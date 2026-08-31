@@ -85,6 +85,19 @@
         height: 350px;
     }
 }
+
+/* contact Responsive layout adjustments */
+@media (max-width: 850px) {
+    .contact-form-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .contact-form-box {
+        padding: 2rem 1.5rem;
+    }
+    .contact-info {
+        padding: 2rem 1.5rem;
+    }
+}
 /* --- Footer Responsive Styles --- */
 @media (max-width: 768px) {
   .footer-container {
