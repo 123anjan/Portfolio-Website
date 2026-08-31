@@ -45,6 +45,13 @@
 [data-theme="dark"] .hero-greeting {
   color: var(--secondary-text);
 }
+
+[data-theme="dark"] .success-message {
+    background: rgba(16, 185, 129, 0.2);
+    color: #34d399;
+    border-color: #34d399;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: var(--bg-color);
@@ -667,6 +674,7 @@ color: var(--accent-color);
 }
 
 /*--- contact page styles---*/
+/* --- Contact Page Styles matching Video Design --- */
 .contact-page-container {
     min-height: calc(100vh - 80px);
     display: flex;
@@ -872,7 +880,19 @@ color: var(--accent-color);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5);
 }
-
+/* --- success message style --- */
+.success-message {
+    margin-top: 1rem;
+    padding: 0.9rem 1rem;
+    background: rgba(16, 185, 129, 0.15);
+    border: 1px solid #10b981;
+    color: #10b981;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-align: center;
+    animation: fadeInUp 0.4s ease forwards;
+}
 /* Geometric Decorative Background Elements */
 .shapes-container {
     position: absolute;
