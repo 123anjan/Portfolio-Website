@@ -26,6 +26,10 @@
     </header>
 
     <main class="contact-page-container">
+      <div class="main-shape main-shape-1"></div>
+      <div class="main-shape main-shape-2"></div>
+      <div class="main-shape main-shape-3"></div>
+      <div class="main-shape main-shape-4"></div>
       <div class="contact-container">
         <!-- Background Geometric Shapes Container -->
         <div class="shapes-container">
@@ -60,10 +64,10 @@
             <div class="social-media">
               <p>Connect with me:</p>
               <div class="social-icons">
-                <a href="#" class="social-icon">F</a>
-                <a href="#" class="social-icon">T</a>
-                <a href="#" class="social-icon">IN</a>
-                <a href="#" class="social-icon">GH</a>
+                <a href="#" class="social-icon">🔗</a>
+                <a href="#" class="social-icon">📧</a>
+                <a href="#" class="social-icon">📞</a>
+                <a href="#" class="social-icon">📍</a>
               </div>
             </div>
           </div>
@@ -84,14 +88,44 @@
                 <span>Email</span>
               </div>
 
-              <div class="input-container">
-                <input type="tel" name="phone" class="input" required />
-                <label>Phone</label>
-                <span>Phone</span>
+              <div class="input-container phone-container">
+                <div class="phone-input-group">
+                  <select
+                    name="countryCode"
+                    class="country-code-select"
+                    aria-label="Country Code"
+                  >
+                    <option value="+91" selected>+91 (IN)</option>
+                    <option value="+1">+1 (US/CA)</option>
+                    <option value="+44">+44 (UK)</option>
+                    <option value="+61">+61 (AU)</option>
+                    <option value="+81">+81 (JP)</option>
+                  </select>
+                  <div class="phone-input-wrapper">
+                    <input
+                      type="tel"
+                      name="phone"
+                      id="phoneInput"
+                      class="input"
+                      placeholder=" "
+                      maxlength="10"
+                      required
+                    />
+                    <label>Phone Number (10 digits)</label>
+                  </div>
+                </div>
+                <span id="phoneError" class="error-text" style="display: none"
+                  >Please enter a valid 10-digit phone number.</span
+                >
               </div>
 
               <div class="input-container textarea">
-                <textarea name="message" class="input" required></textarea>
+                <textarea
+                  name="message"
+                  class="input"
+                  required
+                  class="input"
+                ></textarea>
                 <label>Message</label>
                 <span>Message</span>
               </div>
@@ -99,9 +133,13 @@
               <input type="submit" value="Send" class="btn-submit" />
 
               <!-- Success Message Notification (Hidden by default) -->
-        <div id="successMessage" class="success-message" style="display: none;">
-            🎉 Thank you! Your message has been sent successfully.
-        </div>
+              <div
+                id="successMessage"
+                class="success-message"
+                style="display: none"
+              >
+                🎉 Thank you! Your message has been sent successfully.
+              </div>
             </form>
           </div>
         </div>
