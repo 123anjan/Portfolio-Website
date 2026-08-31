@@ -689,6 +689,7 @@ input:checked + .slider:before {
   padding: 1.5rem;
   position: relative;
   overflow: visible;
+  border-radius: 16px;
   /* height: auto; */
 }
 
@@ -713,8 +714,8 @@ input:checked + .slider:before {
 }
 
 .main-shape-1 {
-  width: 260px;
-  height: 260px;
+  width: 250px;
+  height: 250px;
   top: -80px;
   right: -80px;
   background: var(--accent-color);
@@ -728,8 +729,8 @@ input:checked + .slider:before {
   background: var(--accent-color);
 }
 
-.main-shape-3 {
-  width: 140px;
+/* .main-shape-3 {
+width: 140px; 
   height: 140px;
   top: 35%;
   left: -45px;
@@ -737,25 +738,13 @@ input:checked + .slider:before {
 }
 
 .main-shape-4 {
-  width: 170px;
+ width: 170px; 
   height: 170px;
   bottom: 25%;
   right: -55px;
   background: var(--accent-color);
-}
-/* --- Shape Visibility for Dark Mode --- */
-.shape,
-.main-shape,
-.contact-form-box [class*="shape-"] {
-  opacity: 0.12; /* Increases visibility for standard mode */
-}
+} */
 
-[data-theme="dark"] .shape,
-[data-theme="dark"] .main-shape,
-[data-theme="dark"] .contact-form-box [class*="shape-"] {
-  opacity: 0.22; /* Brighter opacity specifically for dark backgrounds */
-  background: #a78bfa; /* Soft glowing accent tone on dark mode */
-}
 
 .contact-form-wrapper {
   display: grid;
@@ -997,8 +986,9 @@ input:checked + .slider:before {
 [data-theme="dark"] .contact-container {
   height: auto;
   min-height: min-content;
-  overflow: visible;
+  overflow: hidden;
   grid-template-rows: auto;
+  
 }
 /* Submit Button */
 .btn-submit {

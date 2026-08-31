@@ -93,10 +93,32 @@
     }
     .contact-form-box {
         padding: 2rem 1.5rem;
+        
     }
     .contact-info {
         padding: 2rem 1.5rem;
+        
     }
+}
+@media (max-width: 480px) {
+    .contact-page-container {
+        padding: 0.75rem 0.4rem;
+        width: 80%;
+        margin: 30px 0px 0px 46px;
+    }
+
+    .contact-form-box, 
+    .contact-info {
+        padding: 1.5rem 1rem;
+        
+    }
+
+    .phone-input-group {
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
+   
 }
 /* --- Footer Responsive Styles --- */
 @media (max-width: 768px) {
