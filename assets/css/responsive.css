@@ -85,7 +85,16 @@
         height: 350px;
     }
 }
-
+/* --- Projets page Responsive Styles --- */
+/* --- image gallary Responsivness --- */
+@media (max-width: 768px) {
+    .gallery-section {
+        padding: 2.5rem 1rem;
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
 /* contact Responsive layout adjustments */
 @media (max-width: 850px) {
     .contact-form-wrapper {

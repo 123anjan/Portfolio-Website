@@ -679,6 +679,90 @@ input:checked + .slider:before {
 .projects-cards {
   opacity: 80%;
 }
+/* --- Image Gallery Styles --- */
+.gallery-section {
+    padding: 4rem 2rem;
+    background:transparent;
+}
+
+.gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color, #ffffff);
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.gallery-subtitle {
+    text-align: center;
+    color: var(--text-muted, #4c5056);
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 260px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    background: var(--card-bg, #1e293b);
+    opacity: 0.8;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(15, 23, 42, 0.9), transparent);
+    padding: 1.5rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+.gallery-item:hover .gallery-overlay {
+    transform: translateY(0);
+}
+
+.gallery-overlay h3 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+}
+
+.gallery-overlay p {
+    color: #a78bfa;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
 
 /*--- contact page styles---*/
 .contact-page-container {
