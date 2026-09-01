@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-
   inputs.forEach((input) => {
     input.addEventListener("focus", () => {
       input.parentNode.classList.add("focus");
