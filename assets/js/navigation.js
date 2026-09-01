@@ -43,12 +43,13 @@ document.addEventListener("DOMContentLoaded", () => {
           <img src="/assets/icons/menu.png" alt="Menu" class="icon-menu" id="menu-icon"/>
           <img src="/assets/icons/close.png" alt="Close" class="icon-close" id="close-icon"/>
         </button>
-      `
+      `,
     );
   }
 
   const hamburger = document.getElementById("hamburger");
-  const navLinks = document.getElementById("navLinks") || document.querySelector(".nav-links");
+  const navLinks =
+    document.getElementById("navLinks") || document.querySelector(".nav-links");
   const navItems = navLinks ? navLinks.querySelectorAll("a") : [];
 
   if (hamburger && navLinks) {
