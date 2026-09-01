@@ -881,18 +881,19 @@ width: 140px;
   margin-bottom: 0.8rem;
 }
 
-.social-icons {
+ .social-icons {
   display: flex;
-  gap: 0.6rem;
+  gap: 7px;
+    margin-top: 10px;
 }
-.social-icon {
-  width: 28px;
+.social-icons a img {
+  width: 20px;
 }
 
 .contact-info .social-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
+  width: 35px;
+  height: 32px;
+  border-radius: 50%;
   background: rgba(255, 255, 255, 0.15);
   color: #fff;
   display: flex;
@@ -908,7 +909,7 @@ width: 140px;
   background: #fff;
   color: var(--accent-color);
   transform: translateY(-3px);
-}
+} 
 
 /* Contact Form Box Side */
 .contact-form-box {
@@ -941,6 +942,7 @@ width: 140px;
   letter-spacing: 0.5px;
   border-radius: 25px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .input-container textarea.input {
@@ -960,9 +962,11 @@ width: 140px;
   font-size: 0.9rem;
   pointer-events: none;
   transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  background: transparent;
+  /* background: oklab(97.315% 0 -0.00011); */
 }
-
+.bg-label{
+  background: oklab(97.315% 0 -0.00011);
+}
 .input-container.textarea label {
   top: 1.2rem;
   transform: translateY(0);
@@ -1064,7 +1068,7 @@ width: 140px;
 
 [data-theme="dark"] .country-code-select {
   background: #28282f;
-  border-color: #27272a;
+  border-color: #6a29db;
   color: var(--text-color);
 }
 [data-theme="dark"] .contact-container {
