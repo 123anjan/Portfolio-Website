@@ -37,6 +37,31 @@ document.addEventListener("DOMContentLoaded", () => {
     toggleSwitch.addEventListener("change", switchTheme, false);
   }
 });
+/* --- About page resume Download conditions --- */
+document.addEventListener("DOMContentLoaded", () => {
+    const downloadBtn = document.getElementById("downloadResumeBtn");
+
+    if (downloadBtn) {
+        downloadBtn.addEventListener("click", (e) => {
+            // Optional visual confirmation animation
+            downloadBtn.classList.add("downloading");
+            const textSpan = downloadBtn.querySelector("span");
+            const originalText = textSpan.textContent;
+            
+            textSpan.textContent = "Downloading...";
+
+            // Reset button text after download triggers
+            setTimeout(() => {
+                downloadBtn.classList.remove("downloading");
+                textSpan.textContent = "Downloaded!";
+                
+                setTimeout(() => {
+                    textSpan.textContent = originalText;
+                }, 2500);
+            }, 1500);
+        });
+    }
+});
 /* --- Services conditions --- */
 
 readMoreButtons.forEach((button) => {
