@@ -1,9 +1,19 @@
-/* Hero Section Dynamic Animations */
+/**
+ * ==========================================================================
+ * ANIMATIONS
+ * ==========================================================================
+ */
+
+/* ==========================================================================
+   1. HERO SECTION
+   ========================================================================== */
+
 @keyframes slideInLeft {
   from {
     opacity: 0;
     transform: translateX(-50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -15,6 +25,7 @@
     opacity: 0;
     transform: translateX(50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -26,6 +37,7 @@
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-12px);
   }
@@ -36,12 +48,14 @@
   100% {
     text-shadow: 0 0 5px rgba(0, 123, 255, 0);
   }
+
   50% {
     text-shadow: 0 0 20px rgba(0, 123, 255, 0.4);
   }
 }
 
-/* Apply animations to Hero elements */
+/* Hero Animation Bindings */
+
 .hero-content {
   animation: slideInLeft 1s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
@@ -56,7 +70,8 @@
     floatImage 4s ease-in-out infinite 1s;
 }
 
-/* Button pulse effect on hover */
+/* Hero Button Hover Effect */
+
 .primary-btn {
   position: relative;
   overflow: hidden;
@@ -79,12 +94,16 @@
   transform: translate(-50%, -50%) scale(1);
 }
 
-/* Enhanced Cool Animations & Interactions */
+/* ==========================================================================
+   2. SKILLS SECTION
+   ========================================================================== */
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -96,6 +115,7 @@
   100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-5px);
   }
@@ -114,7 +134,8 @@
     border-color 0.4s ease;
 }
 
-/* Glowing accent line at the top of each card on hover */
+/* Glowing Accent Line */
+
 .skill-card::before {
   content: "";
   position: absolute;
@@ -137,7 +158,11 @@
   box-shadow: 0 20px 30px rgba(0, 123, 255, 0.15);
   border-color: #007bff;
 }
-/* --- Animation & Ambient Effects --- */
+
+/* ==========================================================================
+   3. HERO AMBIENT EFFECTS
+   ========================================================================== */
+
 .hero-section {
   position: relative;
   overflow: hidden;
@@ -167,326 +192,385 @@
     transform: scale(1);
     opacity: 0.8;
   }
+
   100% {
     transform: scale(1.15);
     opacity: 1;
   }
 }
 
+/* ==========================================================================
+   4. NAVIGATION
+   ========================================================================== */
 
-/* Hamburger icon animation */
+/* Hamburger Icon Animation */
 
 .hamburger img {
-    position: absolute;
-
-    width: 28px;
-    height: 28px;
-
-    object-fit: contain;
-
-    transition:
-        opacity 0.3s ease,
-        transform 0.4s ease;
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  transition:
+    opacity 0.3s ease,
+    transform 0.4s ease;
 }
 
 .icon-menu {
-    opacity: 1;
-    transform: rotate(0deg) scale(1);
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
 }
 
 .icon-close {
-    opacity: 0;
-    transform: rotate(-90deg) scale(0.5);
+  opacity: 0;
+  transform: rotate(-90deg) scale(0.5);
 }
 
-
-/* Hamburger → X */
+/* Hamburger → Close Icon State */
 
 .hamburger.active .icon-menu {
-    opacity: 0;
-    transform: rotate(90deg) scale(0.5);
+  opacity: 0;
+  transform: rotate(90deg) scale(0.5);
 }
 
 .hamburger.active .icon-close {
-    opacity: 1;
-    transform: rotate(0deg) scale(1);
+  opacity: 1;
+  transform: rotate(0deg) scale(1);
 }
 
-
-/* Mobile navigation animation */
+/* Mobile Navigation Animation */
 
 .nav-links {
-    transition:
-        max-height 0.5s ease,
-        opacity 0.35s ease;
+  transition:
+    max-height 0.5s ease,
+    opacity 0.35s ease;
 }
 
-
-/* Navigation link animation */
+/* Navigation Link Animation */
 
 .nav-links li {
-    transform: translateY(-15px);
+  transform: translateY(-15px);
 
-    transition:
-        opacity 0.3s ease,
-        transform 0.4s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.4s ease;
 }
 
 .nav-links.active li {
-    transform: translateY(0);
+  transform: translateY(0);
 }
 
-
-/* Staggered links */
+/* Staggered Navigation Links */
 
 .nav-links.active li:nth-child(1) {
-    transition-delay: 0.08s;
+  transition-delay: 0.08s;
 }
 
 .nav-links.active li:nth-child(2) {
-    transition-delay: 0.14s;
+  transition-delay: 0.14s;
 }
 
 .nav-links.active li:nth-child(3) {
-    transition-delay: 0.20s;
+  transition-delay: 0.2s;
 }
 
 .nav-links.active li:nth-child(4) {
-    transition-delay: 0.26s;
+  transition-delay: 0.26s;
 }
 
 .nav-links.active li:nth-child(5) {
-    transition-delay: 0.32s;
+  transition-delay: 0.32s;
 }
 
+/* ==========================================================================
+   5. TESTIMONIAL SECTION
+   ========================================================================== */
 
-/* --- Testimonial Card Animations & Hover Effects --- */
 .testimonial-card {
-    background: var(--card-bg, #1e293b);
-    border: 1px solid var(--border-color, rgba(255, 255, 255, 0.05));
-    padding: 2rem;
-    border-radius: 16px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-                box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
-                border-color 0.4s ease;
-    animation: cardFadeIn 0.8s ease forwards;
-    position: relative;
-    overflow: hidden;
+  background: var(--card-bg, #1e293b);
+  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.05));
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.4s ease;
+  animation: cardFadeIn 0.8s ease forwards;
+  position: relative;
+  overflow: hidden;
 }
 
-/* Accent highlight bar on top of the card */
+/* Accent Highlight Bar */
+
 .testimonial-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(90deg, transparent, var(--accent-color, #2563eb), transparent);
-    opacity: 0;
-    transition: opacity 0.3s ease;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--accent-color, #2563eb),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
-/* Hover state matching portfolio cards */
+/* Testimonial Card Hover State */
+
 .testimonial-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 16px 32px -8px rgba(37, 99, 235, 0.25);
-    border-color: rgba(37, 99, 235, 0.3);
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px -8px rgba(37, 99, 235, 0.25);
+  border-color: rgba(37, 99, 235, 0.3);
 }
 
 .testimonial-card:hover::before {
-    opacity: 1;
+  opacity: 1;
 }
 
-/* Entrance keyframe animation when scrolling into view */
+/* Testimonial Card Entrance Animation */
+
 @keyframes cardFadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* --- Footer Entrance Animation --- */
+/* ==========================================================================
+   6. FOOTER
+   ========================================================================== */
+
 .site-footer {
   animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
+
+/* ==========================================================================
+   7. ABOUT PAGE
+   ========================================================================== */
 
 @keyframes fadeInUp {
   from {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-/* --- About Page Animations --- */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 @keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-8px);
-    }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
 }
 
 @keyframes pulseGlow {
-    0%, 100% {
-        box-shadow: 0 0 0 0 rgba(124, 58, 237, 0.4);
-    }
-    50% {
-        box-shadow: 0 0 0 12px rgba(124, 58, 237, 0);
-    }
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(124, 58, 237, 0.4);
+  }
+
+  50% {
+    box-shadow: 0 0 0 12px rgba(124, 58, 237, 0);
+  }
 }
 
-/* --- contact page Input Field Keyframe Animations --- */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+/* About Page Animation Bindings */
 
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-8px);
-    }
-}
-
-/* Smooth staggered entrance for contact form fields */
-@keyframes fieldEntrance {
-    from {
-        opacity: 0;
-        transform: translateX(-15px) translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0) translateY(0);
-    }
-}
-
-/* Glowing outline pulse when input is focused */
-@keyframes focusRingGlow {
-    0% {
-        box-shadow: 0 0 0 0 rgba(124, 58, 237, 0.4);
-    }
-    70% {
-        box-shadow: 0 0 0 6px rgba(124, 58, 237, 0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgba(124, 58, 237, 0);
-    }
-}
-
-/* Success pop animation */
-@keyframes successPop {
-    0% { transform: scale(0.95); opacity: 0; }
-    70% { transform: scale(1.02); opacity: 1; }
-    100% { transform: scale(1); opacity: 1; }
-}
-
-
-/* --- Element Animation Bindings --- */
-
-/* About Page Bindings */
 .about-hero-content {
-    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-/* .about-hero-image img {
-    animation: float 4s ease-in-out infinite;
-    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.5s ease;
-} */
+/*
+.about-hero-image img {
+  animation: float 4s ease-in-out infinite;
+  transition:
+    transform 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.5s ease;
+}
+*/
 
 .about-grid-section {
-    animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
-/* --- About Section Image Keyframe Animations --- */
-.about-image img, 
-.about-img-container img {
-    animation: floatAndGlow 6s ease-in-out infinite;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(28, 28, 28, 0.1);
-    transition: transform 0.5s ease;
+  animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s forwards;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 
-/* Hover enhancement */
-.about-image img:hover, 
+/* About Section Image Animations */
+
+.about-image img,
+.about-img-container img {
+  animation: floatAndGlow 6s ease-in-out infinite;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(28, 28, 28, 0.1);
+  transition: transform 0.5s ease;
+}
+
+/* About Image Hover Enhancement */
+
+.about-image img:hover,
 .about-img-container img:hover {
-    animation-play-state: paused;
-    transform: scale(1.03);
+  animation-play-state: paused;
+  transform: scale(1.03);
 }
 
 @keyframes floatAndGlow {
-    0% {
-        transform: translateY(4px) rotate(-5deg);
-        box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
-    }
-    50% {
-        transform: translateY(-20px) rotate(2deg);
-        box-shadow: 0 20px 40px rgba(37, 99, 235, 0.3);
-    }
-    100% {
-        transform: translateY(-25px) rotate(-1deg);
-        box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
-    }
-    0% {
-        transform: translateX(10px) rotate(3deg);
-        box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
-    }
-      50% {
-        transform: translateX(-20px) rotate(1deg);
-        box-shadow: 0 20px 40px rgba(37, 99, 235, 0.3);
-    }
-    100% {
-        transform: translateX(-25px) rotate(-4deg);
-        box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
-    }
+  0% {
+    transform: translateY(4px) rotate(-5deg);
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
+  }
+
+  50% {
+    transform: translateY(-20px) rotate(2deg);
+    box-shadow: 0 20px 40px rgba(37, 99, 235, 0.3);
+  }
+
+  100% {
+    transform: translateY(-25px) rotate(-1deg);
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
+  }
+
+  0% {
+    transform: translateX(10px) rotate(3deg);
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
+  }
+
+  50% {
+    transform: translateX(-20px) rotate(1deg);
+    box-shadow: 0 20px 40px rgba(37, 99, 235, 0.3);
+  }
+
+  100% {
+    transform: translateX(-25px) rotate(-4deg);
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.15);
+  }
 }
 
-/* Contact page animations */
-/* Contact Form Input Field Bindings */
-.input-container {
+/* ==========================================================================
+   8. CONTACT PAGE
+   ========================================================================== */
+
+/* Contact Form Input Field Keyframe Animations */
+
+@keyframes fadeInUp {
+  from {
     opacity: 0;
-    animation: fieldEntrance 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Stagger the appearance of each input field sequentially */
-.input-container:nth-child(1) { animation-delay: 0.05s; }
-.input-container:nth-child(2) { animation-delay: 0.1s; }
-.input-container:nth-child(3) { animation-delay: 0.15s; }
-.input-container.textarea { animation-delay: 0.2s; }
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Contact Form Field Entrance Animation */
+
+@keyframes fieldEntrance {
+  from {
+    opacity: 0;
+    transform: translateX(-15px) translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+}
+
+/* Input Focus Ring Animation */
+
+@keyframes focusRingGlow {
+  0% {
+    box-shadow: 0 0 0 0 rgba(124, 58, 237, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 6px rgba(124, 58, 237, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(124, 58, 237, 0);
+  }
+}
+
+/* Success Message Animation */
+
+@keyframes successPop {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+
+  70% {
+    transform: scale(1.02);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ==========================================================================
+   9. CONTACT PAGE ANIMATION BINDINGS
+   ========================================================================== */
+
+.input-container {
+  opacity: 0;
+  animation: fieldEntrance 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Sequential Input Field Stagger */
+
+.input-container:nth-child(1) {
+  animation-delay: 0.05s;
+}
+
+.input-container:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.input-container:nth-child(3) {
+  animation-delay: 0.15s;
+}
+
+.input-container.textarea {
+  animation-delay: 0.2s;
+}
 
 .input:focus {
-    animation: focusRingGlow 1.2s infinite ease-in-out;
+  animation: focusRingGlow 1.2s infinite ease-in-out;
 }
 
 .success-message {
-    animation: successPop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  animation: successPop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
