@@ -71,6 +71,39 @@
     margin-bottom: 1rem;
   }
 }
+
+/* ---
+   Testimonials Responsive Breakpoints --*/
+
+/* 1. Mobile Devices (Phones & small viewports: up to 768px) */
+@media screen and (min-width: 400px) and (max-width: 769px) {
+  .testimonials-grid {
+    flex-direction: column;
+  }
+
+  .testimonial-card {
+    flex: 0 0 100% !important;
+    min-width: 100%;
+  }
+
+  .testimonials-section {
+    padding: 3rem 1rem;
+  }
+}
+
+/* 2. Tablet Devices (769px to 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .testimonial-card {
+    flex: 0 0 calc(50% - 1rem) !important;
+  }
+}
+
+/* 3. Desktop Devices (1025px and up) */
+@media screen and (min-width: 1025px) {
+  .testimonial-card {
+    flex: 0 0 calc(33.333% - 1.34rem) !important;
+  }
+}
 /* --- About Responsive Styles --- */
 @media (max-width: 850px) {
   .about-hero-content,
@@ -132,10 +165,11 @@
   .phone-input-wrapper {
     flex-grow: 1;
   }
-.country-code-select {
-  flex-shrink: 0;
-  width: 85px; /* Keeps your current width */
-}}
+  .country-code-select {
+    flex-shrink: 0;
+    width: 85px; /* Keeps your current width */
+  }
+}
 
 /* Stack vertically on small mobile devices */
 @media (max-width: 400px) {

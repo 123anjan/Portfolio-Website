@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Website</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/animation.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/animation.css" />
   </head>
   <body>
     <header>
@@ -24,8 +24,18 @@
         <div class="theme-container"></div>
         <!-- Hamburger Button for Mobile -->
         <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
-          <img src="assets/icons/menu.png" alt="Menu" class="icon-menu" id="menu-icon"/>
-          <img src="assets/icons/close.png" alt="Close" class="icon-close" id="close-icon"/>
+          <img
+            src="assets/icons/menu.png"
+            alt="Menu"
+            class="icon-menu"
+            id="menu-icon"
+          />
+          <img
+            src="assets/icons/close.png"
+            alt="Close"
+            class="icon-close"
+            id="close-icon"
+          />
         </button>
       </nav>
     </header>
@@ -47,8 +57,7 @@
               >Contact Me</a
             >
           </div>
-          <div
-            class="tech-stack-badges">
+          <div class="tech-stack-badges">
             <span>HTML5 / CSS3</span>
             <span>JavaScript (ES6+)</span>
             <span>Python & Django</span>
@@ -180,22 +189,146 @@
           </div>
         </div>
       </section>
-<!-- Featured Projects Preview -->
-<section class="featured-projects">
-    <h2>Featured Projects</h2>
-    <div class="project-grid">
-        <div class="project-card">
+
+      <!-- Enhanced Testimonials Section with Images and Star Ratings -->
+      <section class="testimonials-section">
+        <div class="testimonials-container">
+          <h2 class="testimonials-title">Client & Peer Testimonials</h2>
+          <p class="testimonials-subtitle">
+            What people say about working with me and my projects.
+          </p>
+
+          <div class="testimonials-slider-wrapper">
+            <div class="testimonials-grid">
+              <div class="testimonial-card">
+                <div class="testimonial-stars">
+                  &#9733;&#9733;&#9733;&#9733;&#9733;
+                </div>
+                <p class="testimonial-text">
+                  "Anjan's attention to detail when building full-stack
+                  applications and translating UI/UX designs into clean code is
+                  exceptional."
+                </p>
+                <div class="testimonial-author">
+                  <img
+                    src="assets/images/person 1.png"
+                    alt="Project Peer"
+                    class="author-img"
+                  />
+                  <div>
+                    <h4>Project Peer</h4>
+                    <p>Full-Stack Developer</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-card">
+                <div class="testimonial-stars">
+                  &#9733;&#9733;&#9733;&#9733;&#9733;
+                </div>
+                <p class="testimonial-text">
+                  "The responsive layouts and smooth transitions on the
+                  portfolio clones truly stand out. Great problem-solving
+                  skills!"
+                </p>
+                <div class="testimonial-author">
+                  <img
+                    src="assets/images/person 2.png"
+                    alt="Design Collaborator"
+                    class="author-img"
+                  />
+                  <div>
+                    <h4>Design Collaborator</h4>
+                    <p>UI/UX Designer</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-card">
+                <div class="testimonial-stars">
+                  &#9733;&#9733;&#9733;&#9733;&#9733;
+                </div>
+                <p class="testimonial-text">
+                  "Impressive dedication to clean code structure, database
+                  integration, and building seamless interactive web
+                  experiences."
+                </p>
+                <div class="testimonial-author">
+                  <img
+                    src="assets/images/person 3.png"
+                    alt="Technical Mentor"
+                    class="author-img"
+                  />
+                  <div>
+                    <h4>Technical Mentor</h4>
+                    <p>Software Engineer</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial-card">
+                <div class="testimonial-stars">
+                  &#9733;&#9733;&#9733;&#9733;&#9733;
+                </div>
+                <p class="testimonial-text">
+                  "Wonderful execution of component designs and responsive
+                  navigation. Always pushes for clean architecture."
+                </p>
+                <div class="testimonial-author">
+                  <img
+                    src="assets/images/person 4.png"
+                    alt="Frontend Peer"
+                    class="author-img"
+                  />
+                  <div>
+                    <h4>Frontend Peer</h4>
+                    <p>UI Developer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <div class="testimonials-nav">
+              <button
+                class="testimonial-arrow prev-btn"
+                aria-label="Previous Testimonial"
+              >
+                &#10094;
+              </button>
+              <button
+                class="testimonial-arrow next-btn"
+                aria-label="Next Testimonial"
+              >
+                &#10095;
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects Preview -->
+      <section class="featured-projects">
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+          <div class="project-card skill-card">
             <h3>Student Management System</h3>
-            <p>Full-stack web application integrating HTML, CSS, JavaScript, Python with Flask, and an Oracle SQL database.</p>
+            <p>
+              Full-stack web application integrating HTML, CSS, JavaScript,
+              Python with Flask, and an Oracle SQL database.
+            </p>
             <a href="projects.html" class="btn-text">View Details &rarr;</a>
-        </div>
-        <div class="project-card">
+          </div>
+          <div class="project-card skill-card">
             <h3>Platform Clones & Apps</h3>
-            <p>Interactive web applications and platform clones modeled after Amazon, Spotify, Zomato, and browser games.</p>
+            <p>
+              Interactive web applications and platform clones modeled after
+              Amazon, Spotify, Zomato, and browser games.
+            </p>
             <a href="projects.html" class="btn-text">View Details &rarr;</a>
+          </div>
         </div>
-    </div>
-</section>
+      </section>
     </main>
     <footer class="site-footer">
       <div class="footer-container">
