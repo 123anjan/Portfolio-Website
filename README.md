@@ -110,8 +110,12 @@ PORTFOLIO_ANALYTICS_ID=UA-XXXXX-Y`
 ### Interactive Theme Engine (Contact View)
 | Contact Page (Light Mode) | Contact Page (Dark Mode) |
 | :---: | :---: |
-| ![Contact Form Light Mode](assets/images/contact.png) | ![Contact Form Dark Mode]() |
+| ![Contact Form Light Mode](assets/images/contact.png) | ![Contact Form Dark Mode](/assets/images/DM%20contact.png) |
 
+### Interactive Theme Engine (Contact View)
+| Home Page (Light Mode) |
+| :---: | 
+| ![Dark Mode Toggle]() |
 
 ## Usage/Examples
 
