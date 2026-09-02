@@ -40,8 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "beforeend",
       `
         <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
-          <img src="/assets/icons/menu.png" alt="Menu" class="icon-menu" id="menu-icon"/>
-          <img src="/assets/icons/close.png" alt="Close" class="icon-close" id="close-icon"/>
+          <img src="assets/icons/menu.png" alt="Menu" class="icon-menu" id="menu-icon"/>
+          <img src="assets/icons/close.png" alt="Close" class="icon-close" id="close-icon"/>
         </button>
       `,
     );
