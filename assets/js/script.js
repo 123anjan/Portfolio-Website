@@ -422,7 +422,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
+// Run this in console to force show
+document.querySelector('#hamburger').style.display = 'flex';
 const menuIcon = document.getElementById('menu-icon');
 const closeIcon = document.getElementById('close-icon');
 
