@@ -101,7 +101,7 @@ PORTFOLIO_ANALYTICS_ID=UA-XXXXX-Y`
 ### Core Application Views
 | Primary Home Landing Page | About Me Overview |
 | :---: | :---: |
-| ![Home Page Light Mode](assets/images/Screenshot%202026-09-02%20115357.jpg) | ![About Page](assets/images/Screenshot%202026-09-02%20115424.jpg) |
+| ![Home Page Light Mode](assets/images/Home.png) | ![About Page](assets/images/about.png) |
 
 | Services & Solutions | Projects Showcase |
 | :---: | :---: |
