@@ -94,7 +94,7 @@
   }
 
   .hamburger {
-    display: none;
+    display: inline;
   }
 
   .nav-links {
