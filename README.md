@@ -101,17 +101,21 @@ PORTFOLIO_ANALYTICS_ID=UA-XXXXX-Y`
 ### Core Application Views
 | Primary Home Landing Page | About Me Overview |
 | :---: | :---: |
-| ![Home Page Light Mode](assets/images/Home.png) | ![About Page](assets/images/about.png) |
+| ![Home Page Light Mode](assets/images/Home.png) | ![About Page](assets/images/about.gif) |
 
 | Services & Solutions | Projects Showcase |
 | :---: | :---: |
-| ![Services Page](assets/images/Screenshot%202026-09-02%20115440.jpg) | ![Projects Showcase Page](assets/images/Screenshot%202026-09-02%20115456.jpg) |
+| ![Services Page](assets/images/myservices.png) | ![Projects Showcase Page](assets/images/myprojects.png) |
 
 ### Interactive Theme Engine (Contact View)
 | Contact Page (Light Mode) | Contact Page (Dark Mode) |
 | :---: | :---: |
-| ![Contact Form Light Mode](assets/images/Screenshot%202026-09-02%20115511.jpg) | ![Contact Form Dark Mode](assets/images/Screenshot%202026-09-02%20115525.jpg) |
+| ![Contact Form Light Mode](assets/images/contact.png) | ![Contact Form Dark Mode](/assets/images/DM%20contact.png) |
 
+### Interactive Theme Engine (Contact View)
+| Home Page (Light & Dark Mode Toggle) |
+| :---: | 
+| ![Dark Mode Toggle](https://github.com/123anjan/Portfolio-Website/blob/main/assets/images/Dark%20Mode%20Toggle.gif) |
 
 ## Usage/Examples
 
