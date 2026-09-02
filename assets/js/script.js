@@ -456,4 +456,4 @@ const checkImages = () => {
   });
 };
 
-const data = await checkImages();
+ checkImages();
