@@ -422,38 +422,3 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Run this in console to force show
-document.querySelector('#hamburger').style.display = 'flex';
-const menuIcon = document.getElementById('menu-icon');
-const closeIcon = document.getElementById('close-icon');
-
-const checkImages = () => {
-  return new Promise((resolve) => {
-    let loaded = 0;
-    const total = 2;
-    const results = {};
-
-    const handler = () => {
-      loaded++;
-      if (loaded === total) {
-        results.menuWidth = menuIcon.naturalWidth;
-        results.closeWidth = closeIcon.naturalWidth;
-        resolve(results);
-      }
-    };
-
-    menuIcon.onload = handler;
-    menuIcon.onerror = handler;
-    closeIcon.onload = handler;
-    closeIcon.onerror = handler;
-    
-    // In case they are already cached/loaded
-    if(menuIcon.complete && closeIcon.complete) {
-        results.menuWidth = menuIcon.naturalWidth;
-        results.closeWidth = closeIcon.naturalWidth;
-        resolve(results);
-    }
-  });
-};
-
- checkImages();
