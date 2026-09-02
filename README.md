@@ -115,7 +115,7 @@ PORTFOLIO_ANALYTICS_ID=UA-XXXXX-Y`
 ### Interactive Theme Engine (Contact View)
 | Home Page (Light Mode) |
 | :---: | 
-| ![Dark Mode Toggle]() |
+| ![Dark Mode Toggle](https://github.com/123anjan/Portfolio-Website/blob/main/assets/images/Dark%20Mode%20Toggle.gif) |
 
 ## Usage/Examples
 
