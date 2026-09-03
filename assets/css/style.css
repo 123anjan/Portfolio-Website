@@ -146,7 +146,7 @@ li a:hover::before {
 /* Hamburger Menu */
 /* Ensure the button is visible and correctly sized */
 #hamburger.hamburger {
-  display: flex;
+  display: none;
   position: relative;
   width: 32px;
   height: 32px;
@@ -209,7 +209,7 @@ li a:hover::before {
   position: relative;
   display: inline-block;
   width: 50px;
-  height: 26px;
+  height: 25px;
 }
 
 .theme-switch input {

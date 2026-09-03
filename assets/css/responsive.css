@@ -86,12 +86,13 @@
 /* --------------------------------------------------------------------------
    Tablet / Standard Mobile Breakpoint (<= 768px)
    -------------------------------------------------------------------------- */
-@media screen and (min-width:400) and (max-width:1024){
+@media (max-width:1024px){
    #hamburger.hamburger {
-    display: none;
+    display: inline-block;
+
   }
 }
-
+ 
    @media (max-width: 768px) {
   /* Navigation */
   .navbar {
@@ -142,7 +143,7 @@
   /* Theme Container */
   .theme-container {
     margin-left: auto;
-    margin-right: 15px;
+    margin-right: 13px;
   }
 
   /* Hero Section */
