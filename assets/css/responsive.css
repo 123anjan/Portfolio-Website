@@ -86,15 +86,22 @@
 /* --------------------------------------------------------------------------
    Tablet / Standard Mobile Breakpoint (<= 768px)
    -------------------------------------------------------------------------- */
-@media (max-width: 768px) {
+@media screen and (min-width:400) and (max-width:1024){
+   #hamburger.hamburger {
+    display: none;
+  }
+}
+
+   @media (max-width: 768px) {
   /* Navigation */
   .navbar {
     position: relative;
     background-color: var(--nav-bg);
   }
 
-  .hamburger {
-    display: flex;
+ 
+  .icon-menu{
+      width: 25px; 
   }
 
   .nav-links {

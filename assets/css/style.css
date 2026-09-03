@@ -144,12 +144,55 @@ li a:hover::before {
 }
 
 /* Hamburger Menu */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
+/* Ensure the button is visible and correctly sized */
+#hamburger.hamburger {
+  display: flex;
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: none;
   cursor: pointer;
+  padding: 0;
+  margin-left: 15px;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  z-index: 1000;
 }
+
+/* Style the icons inside the button */
+#hamburger.hamburger img {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  transition: opacity 0.3s ease, transform 0.4s ease;
+  pointer-events: none;
+}
+
+/* Initial state: Menu visible, Close hidden */
+#hamburger.hamburger .icon-menu {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+#hamburger.hamburger .icon-close {
+  opacity: 0;
+  transform: scale(0.5) rotate(-90deg);
+}
+
+/* Active state (when menu is open): Menu hidden, Close visible */
+#hamburger.hamburger.active .icon-menu {
+  opacity: 0;
+  transform: scale(0.5) rotate(90deg);
+}
+
+#hamburger.hamburger.active .icon-close {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+}
+
+
 
 .icon-menu {
   padding: 0.1rem;
