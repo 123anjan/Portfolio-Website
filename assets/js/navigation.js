@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     toggleContainer.innerHTML = `
             <div class="theme-switch-wrapper">
                 <label class="theme-switch" for="dark-mode-checkbox">
+                <label class="theme-switch" for="dark-mode-checkbox">
                     <input type="checkbox" id="dark-mode-checkbox" ${currentTheme === "dark" ? "checked" : ""} />
                     <div class="slider"></div>
                 </label>

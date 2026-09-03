@@ -421,3 +421,4 @@ document.addEventListener("DOMContentLoaded", () => {
     slideInterval = setInterval(slideGallery, 3000);
   });
 });
+
