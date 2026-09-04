@@ -4,10 +4,13 @@
 A responsive, multi-page personal portfolio and business landing web application built as part of the **Full Stack Web Development Internship** This project demonstrates fundamental web development techniques, including semantic HTML5 structure, modular CSS3 styling, ES6+  JavaScript interaction, mobile-first responsive design, web accessibility (WCAG/ARIA) standards, and Git/GitHub version control workflows.
 
 A lightweight, multi-page web platform designed as a personal developer portfolio and showcase landing page. Built using pure, dependency-free HTML5, CSS3, and ES6+ Vanilla JavaScript to deliver maximum performance, fast load times, and clean UI architecture.
+
 ## 📑 Table of Contents
 
 - [Project Overview & Core Motivations](#project-overview--core-motivations)
-- [Comprehensive Features](#comprehensive-features)
+- [Features](#features)
+- [Website Sitemap](#website-sitemap)
+- [Project Development Roadmap](#project-development-roadmap)
 - [Detailed Tech Stack & Specifications](#detailed-tech-stack--specifications)
 - [Environment Variables](#environment-variables)
 - [Screenshots](#screenshots)
@@ -75,6 +78,105 @@ Modern web development frequently relies on heavy framework overhead, complex no
 * **Optimized Showcase Cards:** Standardized card component layout featuring technology badge tags, media wrappers with lazy-loading attributes (`loading="lazy"`), and repository/demo links.
 
 ---
+
+## 🗺️ Website Sitemap
+
+```
+text
+├── Home Page (/)
+│   ├── Hero Banner Component
+│   │   ├── Dynamic Value Proposition Title
+│   │   ├── Primary Call-to-Action (CTA) Buttons
+│   │   └── Interactive Background Canvas / Key Visual
+│   ├── About Summary Teaser Module
+│   │   ├── Core Philosophy Brief
+│   │   └── Direct Link to Full Biography (`/about.html`)
+│   ├── Services Overview Grid
+│   │   ├── Key Offering Cards (Web Dev, UI/UX, API Integration)
+│   │   └── Direct Link to Full Offerings (`/services.html`)
+│   ├── Core Technical Features Section
+│   │   ├── System Highlights & Architecture Badges
+│   │   └── Dynamic Scripting Capabilities Showcase
+│   └── Featured Projects Carousel / Grid
+│       ├── Interactive Demo Cards & Tech Tags
+│       └── Link to Full Portfolio (`/projects.html`)
+│
+├── About Page (/about.html)
+│   ├── Hero Section
+│   │   └── Professional Overview & Mission Statement
+│   ├── Technical Bio & Profile Card
+│   │   ├── Experience Summary & Education
+│   │   └── Interactive Timeline
+│   ├── Core Competencies & Skills Matrix
+│   │   ├── Frontend Stack (HTML5, CSS3, ES6+ JS, Bootstrap)
+│   │   ├── Backend & Databases (Python, Flask/Django, SQL, REST APIs)
+│   │   └── Developer Tools & Workflows (Git, GitHub, Figma)
+│   └── Development Philosophy & Methodologies
+│       ├── Code Quality Standards
+│       └── UI/UX Design Principles
+│
+├── Services Page (/services.html)
+│   ├── Service Offerings Overview
+│   │   ├── Full-Stack Web Application Development
+│   │   ├── Custom Responsive UI/UX Interface Design
+│   │   └── RESTful API Development & Database Integration
+│   ├── Capabilities & Tech Stack Tiers
+│   │   ├── Tech Specifications per Service Category
+│   │   └── Deliverables & SLA Expectations
+│   └── Client Workflow & Development Lifecycle
+│       ├── Phase 1: Requirements Gathering & Figma Prototyping
+│       ├── Phase 2: Architecture & Clean Code Implementation
+│       └── Phase 3: QA Testing, Optimization & Deployment
+│
+├── Projects Page (/projects.html)
+│   ├── Portfolio Controls Header
+│   │   ├── Search Bar Interceptor
+│   │   └── Category Filter Pills (All, Web Apps, UI/UX, Clones)
+│   ├── Dynamic Project Showcase Grid
+│   │   ├── Project Title & Overview Description
+│   │   ├── Technology Badges & Stack Tags
+│   │   ├── Live Interactive Demo Link
+│   │   └── GitHub Repository Source Link
+│   └── Case Studies / Deep Dives (Expandable Modals)
+│
+└── Contact Page (/contact.html)
+    ├── Contact Channel Information
+    │   ├── Direct Email & Professional Social Links
+    │   └── Location / Time Zone Availability
+    └── Client-Side Intercepted Contact Form
+        ├── Name, Email, & Subject Fields
+        ├── Message Input Area with Real-Time Character Counter
+        └── Regex-Based Input Validation & Live State Feedback
+```
+
+## Project Development Roadmap
+
+ **[x] Phase 1: Core Foundation**
+
+- Implement responsive mobile navigation drawer and dark mode engine.
+
+- Set up CSS design tokens, custom theme variables, and basic routing.
+
+**[x] Phase 2: Interactive Components & Client Validation**
+
+- Integrate Regex-based client-side form interceptors.
+
+- Add accessible dynamic scripting components and metadata cards.
+
+**[ ] Phase 3: Automated Testing & Performance Optimization**
+
+- Write cross-browser unit tests and Lighthouse performance audits.
+
+- Optimize image loading and asset bundle sizes.
+
+**[ ] Phase 4: Multi-Language (i18n) & PWA Integration**
+
+- Implement internationalization dynamic locale switcher.
+
+- Configure Service Worker for offline support and caching.#
+
+
+
 ## Detailed Tech Stack
 
 - **Markup Layer:** HTML5 (Semantic document architecture, native form controls, ARIA landmark roles)
@@ -96,7 +198,7 @@ If connecting third-party static API providers (e.g., Formspree or EmailJS for d
 PORTFOLIO_CONTACT_ENDPOINT=[https://formspree.io/f/your_form_id](https://formspree.io/f/your_form_id)
 PORTFOLIO_ANALYTICS_ID=UA-XXXXX-Y`
 
-## Screenshots
+## Desktop version Screenshots
 
 ### Core Application Views
 | Primary Home Landing Page | About Me Overview |
@@ -115,7 +217,29 @@ PORTFOLIO_ANALYTICS_ID=UA-XXXXX-Y`
 ### Interactive Theme Engine (Contact View)
 | Home Page (Light & Dark Mode Toggle) |
 | :---: | 
-| ![Dark Mode Toggle](https://github.com/123anjan/Portfolio-Website/blob/main/assets/images/Dark%20Mode%20Toggle.gif) |
+| ![Dark Mode Toggle](/assets/images/Dark%20Mode%20Toggle.gif) |
+
+## Mobile version Screenshots
+
+### Core Application Views
+| Primary Home Landing Page | About Me Overview |
+| :---: | :---: |
+| ![Home Page Light Mode](assets/images/Home%20mobile.png) | ![About Page](assets/images/about%20img%20animation.gif) |
+
+| Services & Solutions | Projects Showcase |
+| :---: | :---: |
+| ![Services Page](assets/images/my%20services%20mobile.png) | ![Projects Showcase Page](assets/images/projects%20page%20mobile.png) |
+
+### Interactive Theme Engine (Contact View)
+| Contact Page (Light Mode) | Contact Page (Dark Mode) |
+| :---: | :---: |
+| ![Contact Form Light Mode](assets/images/light%20contact%20moblie.png) | ![Contact Form Dark Mode](/assets/images/dark%20theme%20contact%20page.png) |
+
+### Interactive Theme Engine (Contact View)
+| Home Page (Light & Dark Mode Toggle) |
+| :---: | 
+| ![Dark Mode Toggle](/assets/images/Mobile%20home%20dark%20toggle.gif) |
+
 
 ## Usage/Examples
 
@@ -399,7 +523,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 The navigation controller inside `assets/js/navigation.js` dynamically injects accessible menu toggles, manages mobile navigation drawer visibility, locks viewport scrolling when active, and synchronizes ARIA states to ensure screen reader compatibility:
 
-```javascript
+```
+javascript
 /* --- Accessible Hamburger Mobile Navigation System --- */
 
 document.addEventListener("DOMContentLoaded", () => {
