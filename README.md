@@ -791,7 +791,7 @@ Yes. The markup utilizes native semantic HTML5 landmark tags, custom focus state
 
 Feedback helps make this project better! If you have any suggestions, bug reports, or feature requests, feel free to share them through any of the following channels:
 
-* **Open an Issue:** Submit a detailed report or feature idea on the [GitHub Issues](#) page.
+* **Open an Issue:** Submit a detailed report or feature idea on the [GitHub Issues](https://github.com/123anjan/Portfolio-Website/issues) page.
 * **Pull Requests:** Have a direct fix or feature enhancement? Submit a PR following our [Contribution Guidelines](#contribution-guidelines--workflow).
 * **Direct Contact:** Send your thoughts or general inquiries directly through the portfolio's [Contact Form](pages/contact.html).
 * **Survey / Form:** Have 2 minutes? Fill out our quick [ Google Feedback Form](https://forms.gle/k7TdTtieenuRNSwW6) to let us know how we can improve.
