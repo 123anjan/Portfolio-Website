@@ -8,7 +8,7 @@ A lightweight, multi-page web platform designed as a personal developer portfoli
 ## 📑 Table of Contents
 
 - [Project Overview & Core Motivations](#project-overview--core-motivations)
-- [Project Documentation & Architecture Report (PDF)](./Sumerix%20internship%20final%20draft.pdf)
+- [Project Documentation & Architecture Report (PDF)](/project%20document/Sumerix%20internship%20final%20draft.pdf)
 - [Features](#features)
 - [Website Sitemap](#website-sitemap)
 - [Project Development Roadmap](#project-development-roadmap)
