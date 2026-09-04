@@ -86,7 +86,7 @@
 /* --------------------------------------------------------------------------
    Tablet / Standard Mobile Breakpoint (<= 768px)
    -------------------------------------------------------------------------- */
-@media (max-width:350px) and (max-width:1024px){
+@media (max-width:1024px){
    #hamburger.hamburger {
     display: inline-block;
 
@@ -223,6 +223,16 @@
   }
 }
 
+@media (max-width:350px) {
+  .country-code-select{
+    width: 60px;
+  }
+  
+  .phone-input-wrapper {
+  flex-grow: 1;
+  width: calc(100% - 60px);
+}
+}
 /* --------------------------------------------------------------------------
    Testimonials Tablet Range (769px - 1024px)
    -------------------------------------------------------------------------- */
