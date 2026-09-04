@@ -8,6 +8,7 @@ A lightweight, multi-page web platform designed as a personal developer portfoli
 ## 📑 Table of Contents
 
 - [Project Overview & Core Motivations](#project-overview--core-motivations)
+- [Project Documentation & Architecture Report (PDF)](./Sumerix%20internship%20final%20draft.pdf)
 - [Features](#features)
 - [Website Sitemap](#website-sitemap)
 - [Project Development Roadmap](#project-development-roadmap)
@@ -56,6 +57,10 @@ Modern web development frequently relies on heavy framework overhead, complex no
 * **Client-Side State Persistence:** Utilizes JavaScript DOM manipulation and browser `localStorage` APIs to retain user configuration choices, such as dark/light display preferences, across page navigations.
 
 ---
+## Project Documentation
+
+* [Project Documentation & Architecture Report (PDF)](./Sumerix%20internship%20final%20draft.pdf)
+
 ## Features
 
 
