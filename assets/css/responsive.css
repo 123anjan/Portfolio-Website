@@ -224,12 +224,28 @@
 
 @media (min-width: 300px) and (max-width: 1024px)  {
   .country-code-select{
-    width: 60px;
+    width: 58px;
+    flex-shrink: 0;
+    
   }
   
   .phone-input-wrapper {
   flex-grow: 1;
-  width: calc(100% - 60px);
+  width: auto;
+   flex: 1 1 auto;
+   flex-wrap: wrap
+}
+
+@keyframes fieldEntrance {
+  from {
+    opacity: 0;
+    transform: translateX(0px) translateY(0px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
 }
 }
 /* --------------------------------------------------------------------------
