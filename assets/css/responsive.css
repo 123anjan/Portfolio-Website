@@ -224,29 +224,23 @@
 
 @media (min-width: 300px) and (max-width: 1024px)  {
   .country-code-select{
-    width: 58px;
+    width: 60px;
     flex-shrink: 0;
+    flex: 1 1 80px;
     
   }
   
   .phone-input-wrapper {
   flex-grow: 1;
   width: auto;
-   flex: 1 1 auto;
-   flex-wrap: wrap
+   flex: 1;
+   flex-wrap: wrap;
+}
+#phoneInput{
+  width: 168px;
 }
 
-@keyframes fieldEntrance {
-  from {
-    opacity: 0;
-    transform: translateX(0px) translateY(0px);
-  }
 
-  to {
-    opacity: 1;
-    transform: translateX(0) translateY(0);
-  }
-}
 }
 /* --------------------------------------------------------------------------
    Testimonials Tablet Range (769px - 1024px)
