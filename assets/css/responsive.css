@@ -222,7 +222,7 @@
   }
 }
 
-@media (max-width:850px)  {
+@media (min-width: 300px) and (max-width: 1024px)  {
   .country-code-select{
     width: 60px;
   }
