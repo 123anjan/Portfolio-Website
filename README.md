@@ -794,11 +794,11 @@ Feedback helps make this project better! If you have any suggestions, bug report
 * **Open an Issue:** Submit a detailed report or feature idea on the [GitHub Issues](#) page.
 * **Pull Requests:** Have a direct fix or feature enhancement? Submit a PR following our [Contribution Guidelines](#contribution-guidelines--workflow).
 * **Direct Contact:** Send your thoughts or general inquiries directly through the portfolio's [Contact Form](pages/contact.html).
-* **Survey / Form:** Have 2 minutes? Fill out our quick [ Google Feedback Form](https://example.com/feedback) to let us know how we can improve.
+* **Survey / Form:** Have 2 minutes? Fill out our quick [ Google Feedback Form](https://forms.gle/k7TdTtieenuRNSwW6) to let us know how we can improve.
 
 ## Support
 
-For support, email fake@gmail.com.
+For support, email anjan0306basak@gmail.com.
 
 Whether you are encountering setup errors, broken asset paths, or questions regarding customization, structured support channels are available to assist you. Please review the troubleshooting guidelines below before opening a ticket.
 
@@ -828,7 +828,7 @@ Whether you are encountering setup errors, broken asset paths, or questions rega
 **Direct Contact & Portfolio Reach-Out:**
 * **Contact Form:** Use the interactive form on the live website's `pages/contact.html` route for direct technical inquiries.
 * **Developer Links:** Connect via the primary social, GitHub, or LinkedIn developer links located in the footer layout of any page across the platform.
-* **Survey / Form:** Have 2 minutes? Fill out our quick [ Google Feedback Form](https://example.com/feedback) to let us know how we can improve.
+* **Survey / Form:** Have 2 minutes? Fill out our quick [ Google Feedback Form](https://forms.gle/k7TdTtieenuRNSwW6) to let us know how we can improve.
 # Related 
 ## Open-Source Resources & Web Utilities
 
