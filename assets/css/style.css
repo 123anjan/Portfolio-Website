@@ -200,9 +200,10 @@ li a:hover::before {
 
 /* Theme Switcher */
 .theme-switch-wrapper {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 8px;
+  
 }
 
 .theme-switch {
@@ -214,10 +215,14 @@ li a:hover::before {
 
 .theme-switch input {
   width: 0;
-  height: 0;
+  height: -2;
   opacity: 0;
 }
 
+.theme-label{
+   display:inline-block ;  
+   white-space: nowrap
+}
 .slider {
   position: absolute;
   top: 0;
