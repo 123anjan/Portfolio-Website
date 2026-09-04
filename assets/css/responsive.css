@@ -86,7 +86,7 @@
 /* --------------------------------------------------------------------------
    Tablet / Standard Mobile Breakpoint (<= 768px)
    -------------------------------------------------------------------------- */
-@media (max-width: 350px) and (max-width: 1024px) {
+@media (max-width: 769px) {
   #hamburger.hamburger {
     display: inline-block;
   }
