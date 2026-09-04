@@ -216,7 +216,7 @@ PORTFOLIO_ANALYTICS_ID=UA-XXXXX-Y`
 
 ### Interactive Theme Engine (Contact View)
 | Home Page (Light & Dark Mode Toggle) |
-| :---: | 
+| :---: |  
 | ![Dark Mode Toggle](/assets/images/Dark%20Mode%20Toggle.gif) |
 
 ## Mobile version Screenshots
